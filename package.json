@@ -1,0 +1,26 @@
+{
+    "name": "rocketui",
+    "displayName": "RocketUI",
+    "description": "Raw HTML + CSS snippets of common UI components.",
+    "version": "1.0.0",
+    "publisher": "inarocket",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/inarocket/rocketui-vsc"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

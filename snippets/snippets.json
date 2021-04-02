@@ -1,191 +1,8 @@
 {
-  "Layout Grid: Basic 3x2": {
-    "prefix": "re-grid-1",
-    "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
-      "<!-- CSS Code: Start -->",
-      ":root {",
-      "  --color-primary: #164F86;",
-      "  --color-secondary: #cecece;",
-      "}",
-      "",
-      ".container {",
-      "  display: grid;",
-      "  grid: repeat(2, 1fr) / repeat(3, 1fr);",
-      "  border: 5px solid var(--color-secondary);",
-      "}",
-      "",
-      ".item1,",
-      ".item2,",
-      ".item3,",
-      ".item4,",
-      ".item5,",
-      ".item6 {",
-      "  background: var(--color-secondary);",
-      "  margin: .5rem;",
-      "  padding: .5rem;",
-      "}",
-      "<!-- CSS Code: End -->",
-      "",
-      "<!-- HTML Code: Start -->",
-      "<div class=\"container\">",
-      "  <div class=\"item1\">Item 1</div>",
-      "  <div class=\"item2\">Item 2</div>",
-      "  <div class=\"item3\">Item 3</div>",
-      "  <div class=\"item4\">Item 4</div>",
-      "  <div class=\"item5\">Item 5</div>",
-      "  <div class=\"item6\">Item 6</div>",
-      "</div>",
-      "<!-- HTML Code: End -->",
-      ""
-    ],
-    "description": "Layout Grid: Basic 3x2."
-  },
-  "Layout Grid: Basic with a gap": {
-    "prefix": "re-grid-2",
-    "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
-      "<!-- CSS Code: Start -->",
-      ":root {",
-      "  --color-primary: #164f86;",
-      "  --color-secondary: #cecece;",
-      "}",
-      "",
-      ".container {",
-      "  display: grid;",
-      "  grid: repeat(2, 1fr) / repeat(3, 1fr);",
-      "  grid-template-areas:  \"i1 .. i2\"",
-      "                        \"i3 i4 i5\";",
-      "  border: 5px solid var(--color-secondary);",
-      "}",
-      "",
-      ".item1 { grid-area: i1; }",
-      ".item2 { grid-area: i2; }",
-      ".item3 { grid-area: i3; }",
-      ".item4 { grid-area: i4; }",
-      ".item5 { grid-area: i5; }",
-      "",
-      ".item1,",
-      ".item2,",
-      ".item3,",
-      ".item4,",
-      ".item5 {",
-      "  background: var(--color-secondary);",
-      "  margin: .5rem;",
-      "  padding: .5rem;",
-      "}",
-      "<!-- CSS Code: End -->",
-      "",
-      "<!-- HTML Code: Start -->",
-      "<div class=\"container\">",
-      "  <div class=\"item1\">Item 1</div>",
-      "  <div class=\"item2\">Item 2</div>",
-      "  <div class=\"item3\">Item 3</div>",
-      "  <div class=\"item4\">Item 4</div>",
-      "  <div class=\"item5\">Item 5</div>",
-      "</div>",
-      "<!-- HTML Code: End -->",
-      ""
-    ],
-    "description": "Layout Grid: Basic with a gap."
-  },
-  "Layout Grid: 1st row 1 item / 2nd row 3 items": {
-    "prefix": "re-grid-3",
-    "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
-      "<!-- CSS Code: Start -->",
-      ":root {",
-      "  --color-primary: #164f86;",
-      "  --color-secondary: #cecece;",
-      "}",
-      "",
-      ".container {",
-      "  display: grid;",
-      "  grid: repeat(2, 1fr) / repeat(3, 1fr);",
-      "  grid-template-areas:  \"i1 i1 i1\"",
-      "                        \"i2 i3 i4\";",
-      "  border: 5px solid var(--color-secondary);",
-      "}",
-      "",
-      ".item1 { grid-area: i1; }",
-      ".item2 { grid-area: i2; }",
-      ".item3 { grid-area: i3; }",
-      ".item4 { grid-area: i4; }",
-      "",
-      ".item1,",
-      ".item2,",
-      ".item3,",
-      ".item4 {",
-      "  background: var(--color-secondary);",
-      "  margin: .5rem;",
-      "  padding: .5rem;",
-      "}",
-      "<!-- CSS Code: End -->",
-      "",
-      "<!-- HTML Code: Start -->",
-      "<div class=\"container\">",
-      "  <div class=\"item1\">Item 1</div>",
-      "  <div class=\"item2\">Item 2</div>",
-      "  <div class=\"item3\">Item 3</div>",
-      "  <div class=\"item4\">Item 4</div>",
-      "</div>",
-      "<!-- HTML Code: End -->",
-      ""
-    ],
-    "description": "Layout Grid: 1st row 1 item / 2nd row 3 items."
-  },
-  "Layout Grid: 2 rows sidebar": {
-    "prefix": "re-grid-4",
-    "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
-      "<!-- CSS Code: Start -->",
-      ":root {",
-      "  --color-primary: #164f86;",
-      "  --color-secondary: #cecece;",
-      "}",
-      "",
-      ".container {",
-      "  display: grid;",
-      "  grid: repeat(2, 1fr) / repeat(3, 1fr);",
-      "  grid-template-areas:  \"i1 i2 i3\"",
-      "                        \"i4 i5 i3\";",
-      "  border: 5px solid var(--color-secondary);",
-      "}",
-      "",
-      ".item1 { grid-area: i1; }",
-      ".item2 { grid-area: i2; }",
-      ".item3 { grid-area: i3; }",
-      ".item4 { grid-area: i4; }",
-      ".item5 { grid-area: i5; }",
-      "",
-      ".item1,",
-      ".item2,",
-      ".item3,",
-      ".item4,",
-      ".item5 {",
-      "  background: var(--color-secondary);",
-      "  margin: .5rem;",
-      "  padding: .5rem;",
-      "}",
-      "<!-- CSS Code: End -->",
-      "",
-      "<!-- HTML Code: Start -->",
-      "<div class=\"container\">",
-      "  <div class=\"item1\">Item 1</div>",
-      "  <div class=\"item2\">Item 2</div>",
-      "  <div class=\"item3\">Item 3</div>",
-      "  <div class=\"item4\">Item 4</div>",
-      "  <div class=\"item5\">Item 5</div>",
-      "</div>",
-      "<!-- HTML Code: End -->",
-      ""
-    ],
-    "description": "Layout Grid: 2 rows sidebar."
-  },
   "Alert: Basic": {
     "prefix": "re-alert-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -253,7 +70,7 @@
   "Alert: Basic with icon": {
     "prefix": "re-alert-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -306,7 +123,7 @@
   "Alert: Basic with title": {
     "prefix": "re-alert-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -355,7 +172,7 @@
   "Badge: Basic": {
     "prefix": "re-badge-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -398,7 +215,7 @@
   "Badge: Circle": {
     "prefix": "re-badge-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -439,7 +256,7 @@
   "Badge: Basic with gradient": {
     "prefix": "re-badge-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -476,7 +293,7 @@
   "Badge: Basic with icon": {
     "prefix": "re-badge-4",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -531,7 +348,7 @@
   "Breadcrumb: Basic": {
     "prefix": "re-breadcrumb-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -592,7 +409,7 @@
   "Breadcrumb: Arrows": {
     "prefix": "re-breadcrumb-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -668,7 +485,7 @@
   "Breadcrumb: Arrows and highlight": {
     "prefix": "re-breadcrumb-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -752,7 +569,7 @@
   "Breadcrumb: Arrows with icon": {
     "prefix": "re-breadcrumb-4",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -842,7 +659,7 @@
   "Breadcrumb: Steps with icons": {
     "prefix": "re-breadcrumb-5",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -951,7 +768,7 @@
   "Button: Basic": {
     "prefix": "re-button-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -993,7 +810,7 @@
   "Button: Outline": {
     "prefix": "re-button-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1042,7 +859,7 @@
   "Button: Gradient": {
     "prefix": "re-button-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1077,7 +894,7 @@
   "Button: Shadow": {
     "prefix": "re-button-4",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1131,7 +948,7 @@
   "Button: With icon": {
     "prefix": "re-button-5",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1190,7 +1007,7 @@
   "Button: Disabled": {
     "prefix": "re-button-6",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1232,7 +1049,7 @@
   "Button: Button group": {
     "prefix": "re-button-7",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1288,7 +1105,7 @@
   "Card: Vertical - Basic": {
     "prefix": "re-card-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1402,7 +1219,7 @@
   "Card: Vertical - Inset": {
     "prefix": "re-card-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1516,7 +1333,7 @@
   "Card: Vertical - Group": {
     "prefix": "re-card-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1716,7 +1533,7 @@
   "Card: Horizontal - Basic": {
     "prefix": "re-card-4",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1833,7 +1650,7 @@
   "Card: Horizontal - Inset": {
     "prefix": "re-card-5",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -1956,7 +1773,7 @@
   "Card: Horizontal - Group": {
     "prefix": "re-card-6",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -2111,7 +1928,7 @@
   "Form: Search": {
     "prefix": "re-form-1",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -2169,7 +1986,7 @@
   "Form: Search with icon": {
     "prefix": "re-form-2",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -2238,7 +2055,7 @@
   "Form: Search multiple options": {
     "prefix": "re-form-3",
     "body": [
-      "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+      "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
       "<!-- CSS Code: Start -->",
       "*,",
       "*::before,",
@@ -2341,7 +2158,7 @@
 "Navigation: Basic": {
   "prefix": "re-navigation-1",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2395,7 +2212,7 @@
 "Navigation: Tabs": {
   "prefix": "re-navigation-2",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2467,7 +2284,7 @@
 "Pagination: Basic": {
   "prefix": "re-pagination-1",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2539,7 +2356,7 @@
 "Pagination: With icons": {
   "prefix": "re-pagination-2",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2623,7 +2440,7 @@
 "Pagination: With circle": {
   "prefix": "re-pagination-3",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2685,7 +2502,7 @@
 "Pagination: Page of total": {
   "prefix": "re-pagination-4",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2761,7 +2578,7 @@
 "Table: Basic": {
   "prefix": "re-table-1",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2838,7 +2655,7 @@
 "Table: Rounded": {
   "prefix": "re-table-2",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -2922,7 +2739,7 @@
 "Table: Zebra": {
   "prefix": "re-table-3",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -3004,7 +2821,7 @@
 "Table: Zebra and hover": {
   "prefix": "re-table-4",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",
@@ -3089,7 +2906,7 @@
 "Table: Data group": {
   "prefix": "re-table-5",
   "body": [
-    "<!-- FULL REFERENCE: https://inarocket.com/ui-elements/ -->",
+    "<!-- FULL REFERENCE: https://inarocket.com/resources/ -->",
     "<!-- CSS Code: Start -->",
     "*,",
     "*::before,",

@@ -2,7 +2,7 @@
     "name": "rocketui",
     "displayName": "RocketUI",
     "description": "Raw HTML + CSS snippets of common UI components.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "inarocket",
     "repository": {
         "type": "git",
